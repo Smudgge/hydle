@@ -31,9 +31,12 @@ function showDaily() {
     button_daily.classList.add("underline-5")
     button_daily.classList.add("bg-2")
 
+    let date = new Date();
+    let monthNumber = date.getDate();
+
     id.style.display = "block"
-    id.innerHTML = "#" + 0
-    run(0)
+    id.innerHTML = "#" + monthNumber
+    run(monthNumber)
 }
 
 /**
