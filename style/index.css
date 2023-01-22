@@ -73,6 +73,10 @@ header button h1 {
     #puzzle input  {
         font-size: 1.3rem;
     }
+    #puzzle .controls svg {
+        width: 20px;
+        height: 20px;
+    }
 }
 
 /*                   Practice
