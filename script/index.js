@@ -114,6 +114,11 @@ function clear() {
 function guess() {
     if (isEnded) return
 
+    if (guessNumber == 6) {
+        timeAllowed = 1000000;
+        isEnded = true
+    }
+
     let input = guess_map[guessNumber].querySelectorAll("input")[0]
     let h1 = guess_map[guessNumber].querySelectorAll("h1")[0];
 
