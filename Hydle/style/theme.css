@@ -1,0 +1,113 @@
+/*                   Colours
+====================         ====================*/
+:root {
+    --c1: #0D1117;
+    --c2: #262e3a;
+    --c3: #7b7f8a;
+    --c4: #fff6fe;
+    --c5: #BBFDAD;
+
+    --correct: rgb(199, 247, 128);
+    --composer: rgb(254, 240, 81);
+    --period: rgb(240, 170, 95);
+}
+
+/*                   Default
+====================         ====================*/
+html {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: var(--c1);
+    font-family: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    background: var(--c1);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--c2); 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+button {
+    border: none;
+}
+
+svg {
+    fill: var(--c3);
+    width: 40px;
+    height: 40px;
+}
+
+h1 {
+    color: var(--c3);
+    font-size: 1.8rem;
+}
+
+input {
+    background-color: var(--c1);
+    border: 3px solid var(--c3);
+    color: var(--c4);
+    font-weight: 900;
+    font-size: 1.8rem;
+}
+
+/*                   Classes
+====================         ====================*/
+
+.fg-1 {color: var(--c1)}
+.fg-2 {color: var(--c2)}
+.fg-3 {color: var(--c3)}
+.fg-4 {color: var(--c4)}
+.fg-5 {color: var(--c5)}
+
+.bg-1 {background-color: var(--c1)}
+.bg-2 {background-color: var(--c2)}
+.bg-3 {background-color: var(--c3)}
+.bg-4 {background-color: var(--c4)}
+.bg-5 {background-color: var(--c5)}
+
+.fill-1 {fill: var(--c1)}
+.fill-2 {fill: var(--c2)}
+.fill-3 {fill: var(--c3)}
+.fill-4 {fill: var(--c4)}
+.fill-5 {fill: var(--c5)}
+
+.underline-1 {border-bottom: 3px solid var(--c1)}
+.underline-2 {border-bottom: 3px solid var(--c2)}
+.underline-3 {border-bottom: 3px solid var(--c3)}
+.underline-4 {border-bottom: 3px solid var(--c4)}
+.underline-5 {border-bottom: 3px solid var(--c5)}
+
+.hover:focus,
+.hover:hover {
+    background-color: var(--c2);
+}
+
+.hover-fill:focus,
+.hover-fill:hover {
+    fill: var(--c5);
+}
+
+.radius {border-radius: 1em;}
+.border {border: 3px solid var(--c2)}
+
+.underline-hover-4:focus,
+.underline-hover-4:hover {border-bottom: 3px solid var(--c4)}
+
+.correct {border-color: var(--correct)}
+.correct h1 {color: var(--correct)}
+
+.composer {border-color: var(--composer);}
+.composer h1 {color: var(--composer);}
+
+.period {border-color: var(--period);}
+.period h1 {color: var(--period);}

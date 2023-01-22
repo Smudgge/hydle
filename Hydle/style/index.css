@@ -1,0 +1,76 @@
+/*                   Header
+====================         ====================*/
+header {
+    display: flex;
+    justify-content: center;
+    padding: 0.5em;
+}
+
+header button {
+    display: flex;
+    align-items: center;
+    padding: 0em 1em;
+}
+
+header button h1 {
+    padding: 0em 0.5em;
+}
+
+@media (max-width: 30em) {
+    header button h1 {
+        font-size: 1.2rem;
+    }
+    header button svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/*                   Puzzle
+====================         ====================*/
+
+#puzzle {
+    margin: 1em 0em;
+}
+
+#puzzle p {
+    padding: 0em 1em;
+}
+
+#puzzle .guess {
+    display: flex;
+    align-items: center;
+    margin: 1em 0em;
+}
+
+#puzzle h1 {
+    margin: 0em 1em;
+    padding: 0.5em;
+}
+
+#puzzle input {
+    width: 100%;
+    border: none;
+}
+
+#puzzle input:hover,
+#puzzle input:focus {
+    outline: none;
+}
+
+#puzzle .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#puzzle .controls button {
+    margin: 1em;
+}
+
+@media (max-width: 30em) {
+    #puzzle h1,
+    #puzzle input  {
+        font-size: 1.2rem;
+    }
+}
