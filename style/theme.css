@@ -2,8 +2,8 @@
 ====================         ====================*/
 :root {
     --c1: #0D1117;
-    --c2: #1d232c;
-    --c3: #6e727c;
+    --c2: #262e3a;
+    --c3: #7b7f8a;
     --c4: #fff6fe;
     --c5: #BBFDAD;
 
@@ -43,13 +43,13 @@ button {
 
 svg {
     fill: var(--c3);
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 }
 
 h1 {
     color: var(--c3);
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 input {
@@ -57,7 +57,7 @@ input {
     border: 3px solid var(--c3);
     color: var(--c4);
     font-weight: 900;
-    font-size: 1.3rem;
+    font-size: 1.8rem;
 }
 
 /*                   Classes
@@ -92,8 +92,22 @@ input {
     background-color: var(--c2);
 }
 
+.hover-fill:focus,
+.hover-fill:hover {
+    fill: var(--c5);
+}
+
 .radius {border-radius: 1em;}
 .border {border: 3px solid var(--c2)}
 
 .underline-hover-4:focus,
 .underline-hover-4:hover {border-bottom: 3px solid var(--c4)}
+
+.correct {border-color: var(--correct)}
+.correct h1 {color: var(--correct)}
+
+.composer {border-color: var(--composer);}
+.composer h1 {color: var(--composer);}
+
+.period {border-color: var(--period);}
+.period h1 {color: var(--period);}
