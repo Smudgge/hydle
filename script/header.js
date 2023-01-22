@@ -36,7 +36,7 @@ function showDaily() {
 
     id.style.display = "block"
     id.innerHTML = "#" + monthNumber
-    run(monthNumber)
+    runDaily(monthNumber)
 }
 
 /**
@@ -45,6 +45,8 @@ function showDaily() {
  */
 function showPuzzle() {
     hideSections()
+    button_practice.classList.add("underline-5")
+    button_practice.classList.add("bg-2")
     puzzle.style.display = "block"
 }
 

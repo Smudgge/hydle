@@ -22,11 +22,15 @@ const audio = document.getElementById("audio");
 const svg_play = document.getElementById("svg-play");
 const svg_pause = document.getElementById("svg-pause");
 
+const next = document.getElementById("button-next");
+const past = document.getElementById("button-past");
+
 var isPlaying = false;
 var isEnded = false;
 var timeAllowed = 2;
 var guessNumber = 1;
 var currentID;
+var currentPlaylistIndex = 0;
 
 // First run
 showDaily()
@@ -48,6 +52,42 @@ function run(id) {
     playAudio()
 
     highlightGuess()
+}
+
+function runPlaylist() {
+    run(playlist.at(currentPlaylistIndex))
+    id.style.display = "none"
+    past.style.display = "block"
+    next.style.display = "block"
+}
+
+function runDaily(musicId) {
+    run(musicId)
+    id.style.display = "block"
+    past.style.display = "none"
+    next.style.display = "none"
+    console.log("daily")
+}
+
+function nextAudio() {
+    let size = playlist.length
+    let temp = currentPlaylistIndex += 1
+    if (temp > size) temp = 0
+
+    currentPlaylistIndex = temp
+    currentID = playlist.at(temp)
+
+    runPlaylist()
+}
+
+function pastAudio() {
+    let temp = currentPlaylistIndex -= 1
+    if (temp < 0) temp = playlist.length - 1
+
+    currentPlaylistIndex = temp
+    currentID = playlist.at(temp)
+
+    runPlaylist()
 }
 
 function clear() {

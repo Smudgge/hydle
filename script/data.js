@@ -62,6 +62,8 @@ const music = {
 const composers = []
 const periods = ["Classical", "Romantic"]
 
+var playlist = []
+
 // First run
 for (let id in music) {
     let composer = music[id][2]
@@ -92,4 +94,18 @@ function addOption(value) {
  */
 function getSource(id) {
     return "./audio/" + music[id][0]
+}
+
+function playlistAll() {
+    playlist = []
+    for (let id in music) {
+        playlist.push(id)
+    }
+}
+
+function playlistALevel() {
+    playlist = []
+    for (let id in music) {
+        playlist.push(id)
+    }
 }

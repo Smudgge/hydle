@@ -74,3 +74,16 @@ header button h1 {
         font-size: 1.3rem;
     }
 }
+
+/*                   Practice
+====================         ====================*/
+
+#practice {
+    display: grid;
+}
+
+#practice button {
+    margin: 1em;
+    width: 200px;
+    height: 200px;
+}
