@@ -18,7 +18,7 @@ header button h1 {
 
 @media (max-width: 30em) {
     header button h1 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
     header button svg {
         width: 20px;
@@ -73,9 +73,12 @@ header button h1 {
     #puzzle input  {
         font-size: 1.3rem;
     }
+    #puzzle .controls button {
+        margin: 0.5em;
+    }
     #puzzle .controls svg {
-        width: 20px;
-        height: 20px;
+        width: 30px;
+        height: 30px;
     }
 }
 
