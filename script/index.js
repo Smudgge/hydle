@@ -108,16 +108,18 @@ function clear() {
     }
 }
 
+function end() {
+    timeAllowed = 1000000;
+    isEnded = true
+}
+
 /**
  * Called when a guess is made.
  */
 function guess() {
     if (isEnded) return
 
-    if (guessNumber == 6) {
-        timeAllowed = 1000000;
-        isEnded = true
-    }
+    if (guessNumber == 6) end()
 
     let input = guess_map[guessNumber].querySelectorAll("input")[0]
     let h1 = guess_map[guessNumber].querySelectorAll("h1")[0];
@@ -134,9 +136,8 @@ function guess() {
 
     if (input.value == music[currentID][1]) {
         guess_map[guessNumber].classList.add("correct")
-        timeAllowed = 1000000;
-        isEnded = true
-        
+
+        end()
         loadAudio(getSource(currentID))
         playAudio()
 
@@ -170,16 +171,10 @@ function highlightGuess() {
 
     input.style.display = "block"
     input.focus();
-    input.addEventListener("keyup", function(event) {
-        event.preventDefault();
-        if (event.keyCode === 13) {
-            guess();
-        }
-    });
 }
 
 function checkEnter(event) {
-    if (event.keyCode === 9) {
+    if (event.keyCode === 9 || event.keyCode === 13) {
         guess()
     }
 }
