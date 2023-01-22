@@ -62,6 +62,7 @@ function runPlaylist() {
 }
 
 function runDaily(musicId) {
+    playlist = []
     run(musicId)
     id.style.display = "block"
     past.style.display = "none"
@@ -117,7 +118,13 @@ function end() {
  * Called when a guess is made.
  */
 function guess() {
-    if (isEnded) return
+    if (isEnded) {
+        if (playlist.length > 0) {
+            nextAudio()
+        }
+
+        return
+    }
 
     if (guessNumber == 6) end()
 
