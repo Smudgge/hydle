@@ -35,8 +35,8 @@ function showDaily() {
     let monthNumber = date.getDate();
 
     id.style.display = "block"
-    id.innerHTML = "#" + monthNumber
-    runDaily(monthNumber)
+    id.innerHTML = "#" + (monthNumber + 1)
+    runDaily(monthNumber + 1)
 }
 
 /**
