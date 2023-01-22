@@ -1,0 +1,35 @@
+/*                   Header
+====================         ====================*/
+header {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+
+header button {
+    display: flex;
+    align-items: center;
+    padding: 0em 1em;
+}
+
+header button h1 {
+    padding: 0em 1em;
+}
+
+/*                   Puzzle
+====================         ====================*/
+
+#puzzle {
+    margin: 1em 0em;
+}
+
+#puzzle .guess {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    margin: 1em 0em;
+}
+
+#puzzle h1 {
+    margin: 0em 1em;
+}
