@@ -28,7 +28,7 @@ const music = {
     22: ['CPEBach_Symphony_Em.mp3', 'CPEBach Symphony Em', 'CPEBach', 'Classical'], 
     23: ['Kapustin_Concerto_2.mp3', 'Kapustin Concerto 2', 'Kapustin', 'Romantic'], 
     24: ['Mendelssohn_Symphony_3.mp3', 'Mendelssohn Symphony 3', 'Mendelssohn', 'Romantic'], 
-    25: ['Beethoven_Symphony_3_v2.mp3', 'Beethoven Symphony 3 v2', 'Beethoven', 'Romantic'], 
+    25: ['Beethoven_Symphony_3_v2.mp3', 'Beethoven Symphony 3', 'Beethoven', 'Romantic'], 
     26: ['Haydn_Symphony_41.mp3', 'Haydn Symphony 41', 'Haydn', 'Classical'], 
     27: ['Elgar_Concerto_Cello.mp3', 'Elgar Concerto Cello', 'Elgar', 'Romantic'], 
     28: ['Stamitz_Symphony_2.mp3', 'Stamitz Symphony 2', 'Stamitz', 'Classical'], 
