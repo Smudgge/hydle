@@ -60,6 +60,8 @@
             <input list="options" id="guess-6">
         </div>
 
+        <h1 class="fg-4" id="answer" style="display: none;"></h1>
+
         <datalist id="options"></datalist>
         <audio src="" id="audio"></audio>
 
@@ -87,6 +89,9 @@
         </button>-->
         <button class="bg-1 border radius hover" onclick="showPuzzle();playlistAll();runPlaylist()" id="button-play">
             <h1>All</h1>
+        </button>
+        <button class="bg-1 border radius hover" onclick="showPuzzle();playlistALevel();runPlaylist()" id="button-play">
+            <h1>A Level</h1>
         </button>
     </section>
 

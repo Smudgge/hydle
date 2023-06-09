@@ -28,7 +28,7 @@ const music = {
     22: ['CPEBach_Symphony_Em.mp3', 'CPEBach Symphony Em', 'CPEBach', 'Classical'], 
     23: ['Kapustin_Concerto_2.mp3', 'Kapustin Concerto 2', 'Kapustin', 'Romantic'], 
     24: ['Mendelssohn_Symphony_3.mp3', 'Mendelssohn Symphony 3', 'Mendelssohn', 'Romantic'], 
-    25: ['Beethoven_Symphony_3_v2.mp3', 'Beethoven Symphony 3', 'Beethoven', 'Romantic'], 
+    25: ['Beethoven_Symphony_3_v2.mp3', 'Beethoven Symphony 3 mov1', 'Beethoven', 'Romantic'], 
     26: ['Haydn_Symphony_41.mp3', 'Haydn Symphony 41', 'Haydn', 'Classical'], 
     27: ['Elgar_Concerto_Cello.mp3', 'Elgar Concerto Cello', 'Elgar', 'Romantic'], 
     28: ['Stamitz_Symphony_2.mp3', 'Stamitz Symphony 2', 'Stamitz', 'Classical'], 
@@ -45,7 +45,7 @@ const music = {
     39: ['Mahler_Symphony_2.mp3', 'Mahler Symphony 2', 'Mahler', 'Romantic'], 
     40: ['Satie_Vexations.mp3', 'Satie Vexations', 'Satie', 'Romantic'], 
     41: ['Smetana_MaVlast.mp3', 'Smetana MaVlast', 'Smetana', 'Romantic'], 
-    42: ['Beethoven_Symphony_3.mp3', 'Beethoven Symphony 3', 'Beethoven', 'Romantic'], 
+    42: ['Beethoven_Symphony_3.mp3', 'Beethoven Symphony 3 mov2', 'Beethoven', 'Romantic'], 
     43: ['Mahler_Symphony_1.mp3', 'Mahler Symphony 1', 'Mahler', 'Romantic'], 
     44: ['Scriabin_Symphony_2.mp3', 'Scriabin Symphony 2', 'Scriabin', 'Romantic'], 
     45: ['Wieniawski_Concerto_2.mp3', 'Wieniawski Concerto 2', 'Wieniawski', 'Romantic'], 
@@ -103,8 +103,10 @@ function playlistAll() {
 }
 
 function playlistALevel() {
-    playlist = []
-    for (let id in music) {
-        playlist.push(id)
-    }
+    playlist = [
+        52, 51, 50, 49, 47, 48, 46, 43, 42, 41, 39, 
+        38, 37, 36, 35, 34, 32, 31, 29, 28, 26, 25, 24, 22, 
+        21, 19, 18, 17, 16, 15, 13, 14, 13, 12, 11, 10, 9, 
+        8, 7, 6, 5, 4, 3, 2
+    ]
 }

@@ -7,6 +7,8 @@ const guess_4 = document.getElementById("guess-4");
 const guess_5 = document.getElementById("guess-5");
 const guess_6 = document.getElementById("guess-6");
 
+const answer_line = document.getElementById("answer");
+
 const guess_map = {
     1: guess_1,
     2: guess_2,
@@ -59,6 +61,7 @@ function runPlaylist() {
     id.style.display = "none"
     past.style.display = "block"
     next.style.display = "block"
+    answer_line.style.display = "none"
 }
 
 function runDaily(musicId) {
@@ -112,6 +115,9 @@ function clear() {
 function end() {
     timeAllowed = 1000000;
     isEnded = true
+
+    answer_line.style.display = "block"
+    answer_line.innerHTML = music[currentID][1]
 }
 
 /**

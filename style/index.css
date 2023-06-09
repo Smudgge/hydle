@@ -43,6 +43,10 @@ header button h1 {
     margin: 1em 0em;
 }
 
+#puzzle #answer {
+    text-align: center;
+}
+
 #puzzle h1 {
     margin: 0em 1em;
     padding: 0.5em;
